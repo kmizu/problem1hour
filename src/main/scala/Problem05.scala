@@ -49,6 +49,6 @@ object Problem05 {
   }
 
   def main(args: Array[String]): Unit = {
-    println(combination(List(1, 2, 3)).filter{x => sum(x) == 6}.map{x => toStrings(x)}.map(x => x.mkString("+")))
+    println(combination((1 to 9).toList).filter{x => sum(x) == 100}.map{x => toStrings(x)}.map(x => x.mkString("+")))
   }
 }
